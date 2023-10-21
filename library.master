@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="library.master.cs" Inherits="library" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 100%;
+            margin-top: 12px;
+        }
+        .auto-style3 {
+            font-size: xx-large;
+            color: #990000;
+             
+        }
+        .auto-style4 {
+            text-align: center;
+        
+      
+            
+        }
+        body{
+            background-image:url("lib.jpg");
+        }
+    </style>
+</head>
+<body >
+    <form id="form1" runat="server">
+    <div class="auto-style4" >
+        <div>
+            <strong><span class="auto-style3" align="center" >Library Management System</span><br />
+        </span></strong>
+        </div>
+        <hr />
+      
+        `<table class="auto-style2">
+            <tr>
+                <td>
+                    <asp:LinkButton ID="LinkButton9" runat="server" OnClick="LinkButton9_Click">Home</asp:LinkButton>
+                </td>
+                <strong>
+                <td>
+                    <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">New Student</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Search Student</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">All Student</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">Add Book</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Search Book</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton7" runat="server" OnClick="LinkButton7_Click">All Books</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton10" runat="server" OnClick="LinkButton10_Click">Issue</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton11" runat="server" OnClick="LinkButton11_Click">Submit Book</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton12" runat="server" OnClick="LinkButton12_Click">Requests</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton8" runat="server" OnClick="LinkButton8_Click">Log Out</asp:LinkButton>
+                </td>
+            </tr>
+             
+        </table>
+        <hr />
+        </strong>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
